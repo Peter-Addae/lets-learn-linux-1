@@ -1,2 +1,12 @@
 # Q1. What does each command tell you? Why does a DevSecOps engineer run these three things first when SSHing into an unknown server — especially regarding kernel CVEs?
 DevSecOps engineers run them(pwd whoami, uname-r) first to quickly know where they are, who they are, and how secure the system is, especially to check if the kernel has known security issues (CVEs).
+
+# Q2.
+/etc stores system settings.
+/home stores user files.
+/var stores logs and changing data.
+/usr stores installed software and programs.
+/bin stores basic system commands.
+FHS (Filesystem Hierarchy Standard) is a rule that defines where files go in Linux. Without it, Linux systems would be inconsistent, scripts would break, logs and programs couldn’t be found, and production servers would become hard to manage and unreliable.
+
+#Q3. The first command shows only normal visible files and folders.The second command shows all files, including hidden ones, with details like permissions, owner, size, and time. Hidden files in Linux are not a special file type. A file is hidden simply if its name starts with a dot (.), like .bashrc.
