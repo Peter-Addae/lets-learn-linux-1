@@ -1,0 +1,2 @@
+# Q1. What does each command tell you? Why does a DevSecOps engineer run these three things first when SSHing into an unknown server — especially regarding kernel CVEs?
+DevSecOps engineers run them(pwd whoami, uname-r) first to quickly know where they are, who they are, and how secure the system is, especially to check if the kernel has known security issues (CVEs).
